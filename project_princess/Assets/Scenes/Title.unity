@@ -426,7 +426,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1285712063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: ce0eb64c5a6c2d64d8df4cbdf4867046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -459,6 +459,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  enableSound: 1
+  enableScaling: 0
 --- !u!1 &1562203929
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc6cd10ad556f341acc4a6d65296421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleButton: {fileID: 1285712067}
+  titleButton: {fileID: 0}
 --- !u!1 &1737564331
 GameObject:
   m_ObjectHideFlags: 0
