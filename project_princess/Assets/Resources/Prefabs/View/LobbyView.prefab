@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 6997655867503172572}
   - component: {fileID: 6997655867503172563}
   m_Layer: 5
-  m_Name: Info_3
+  m_Name: StarmapTypeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,6 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6997655867524253152}
+  - component: {fileID: 6997655867225408715}
   m_Layer: 5
   m_Name: LobbyView
   m_TagString: Untagged
@@ -589,6 +590,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6997655867225408715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997655867524253159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92faeec3d40313c409d3e500a7d02660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiViewType: 0
+  calenderUI: {fileID: 6997655867225408714}
+  userInfoUI: {fileID: 6997655867225408713}
+  menuUI: {fileID: 6997655867225408712}
 --- !u!1 &6997655867539820976
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +618,7 @@ GameObject:
   - component: {fileID: 6997655867539820979}
   - component: {fileID: 6997655867539820978}
   m_Layer: 5
-  m_Name: Info_2
+  m_Name: BloodTypeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,6 +691,7 @@ GameObject:
   - component: {fileID: 6997655867567387796}
   - component: {fileID: 6997655867567387798}
   - component: {fileID: 6997655867567387797}
+  - component: {fileID: 6997655867225408713}
   m_Layer: 5
   m_Name: UserInfoUI
   m_TagString: Untagged
@@ -742,6 +760,23 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &6997655867225408713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997655867567387819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99aa4a77f32f65a4aae9ecedcb901585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nicknameText: {fileID: 6997655868473656494}
+  ageInfoImage: {fileID: 6997655868345235927}
+  bloodTypeInfoImage: {fileID: 6997655867539820978}
+  starmapTypeInfoImage: {fileID: 6997655867503172563}
+  moneyText: {fileID: 6997655866983588928}
 --- !u!1 &6997655867707877048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1423,7 @@ GameObject:
   - component: {fileID: 6997655868284107001}
   - component: {fileID: 6997655868284107003}
   - component: {fileID: 6997655868284107002}
+  - component: {fileID: 6997655867225408712}
   m_Layer: 5
   m_Name: MenuUI
   m_TagString: Untagged
@@ -1457,6 +1493,30 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &6997655867225408712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997655868284107000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b013d47db7c584090b27a9c14eb868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scheduleChartButton: {fileID: 6997655868008826740}
+  shoppingButton: {fileID: 6997655868371929189}
+  talkButton: {fileID: 6997655867883834290}
+  actionButton: {fileID: 6997655866959771325}
+  changeWearButton: {fileID: 3333491457917959463}
+  statusButton: {fileID: 5844398571730950413}
+  scheduleChartButtonText: {fileID: 6997655867026759329}
+  shoppingButtonText: {fileID: 6997655868237736178}
+  talkButtonText: {fileID: 6997655868299526094}
+  actionButtonText: {fileID: 6997655867867826581}
+  changeWearButtonText: {fileID: 3626324570195999721}
+  statusButtonText: {fileID: 241209212282561342}
 --- !u!1 &6997655868299526092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1662,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0c55c920cc05c2845be4003c22bf0a31, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -1627,7 +1687,7 @@ GameObject:
   - component: {fileID: 6997655868345235920}
   - component: {fileID: 6997655868345235927}
   m_Layer: 5
-  m_Name: Info_1
+  m_Name: AgeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,6 +1959,7 @@ GameObject:
   - component: {fileID: 6997655868504270063}
   - component: {fileID: 6997655868504270057}
   - component: {fileID: 6997655868504270056}
+  - component: {fileID: 6997655867225408714}
   m_Layer: 5
   m_Name: CalenderUI
   m_TagString: Untagged
@@ -1966,6 +2027,22 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &6997655867225408714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997655868504270062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f93a704beb4387408e78ad297947215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scheduleCountText: {fileID: 6997655868303225960}
+  monthText: {fileID: 6997655868132107134}
+  dayofweekText: {fileID: 6997655868084571447}
+  dateText: {fileID: 6997655867707877050}
 --- !u!1 &7053479548216600529
 GameObject:
   m_ObjectHideFlags: 0

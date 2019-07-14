@@ -240,7 +240,92 @@ public class Utils
 
         return stringBuilder.ToString();
     }
-        
+
+    /// <summary>
+    /// 월(숫자)를 월(약어) 스트링 형태로 변환
+    /// </summary>
+    public static string GetMonthNumberToMonthString( int monthNumber )
+    {
+        string monthString = "";
+        switch( monthNumber )
+        {
+            case 1:
+                monthString = "JAN";
+                break;
+            case 2:
+                monthString = "FEB";
+                break;
+            case 3:
+                monthString = "MAR";
+                break;
+            case 4:
+                monthString = "APR";
+                break;
+            case 5:
+                monthString = "MAY";
+                break;
+            case 6:
+                monthString = "JUN";
+                break;
+            case 7:
+                monthString = "JUL";
+                break;
+            case 8:
+                monthString = "AUG";
+                break;
+            case 9:
+                monthString = "SEP";
+                break;
+            case 10:
+                monthString = "OCT";
+                break;
+            case 11:
+                monthString = "NOV";
+                break;
+            case 12:
+                monthString = "DEC";
+                break;
+            default :
+                monthString = "error text";
+                break;
+        }
+
+        return monthString;
+    }
+    
+    /// <summary>
+    /// 나이 이미지 리턴
+    /// </summary>
+    public static Sprite GetAgeTypeToSprite( int age )
+    {
+        Sprite sprite = null;
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "age_type_image_" + age.ToString() );
+
+        return sprite;
+    }
+
+    /// <summary>
+    /// 혈액형 이미지 리턴
+    /// </summary>
+    public static Sprite GetBloodTypeToSprite( int bloodType )
+    {
+        Sprite sprite = null;
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "blood_type_image_" + bloodType.ToString() );
+
+        return sprite;
+    }
+
+    /// <summary>
+    /// 별자리 이미지 리턴
+    /// </summary>
+    public static Sprite GetStarMapTypeToSprite( int starmapType )
+    {
+        Sprite sprite = null;
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "starmap_type_image_" + starmapType.ToString() );
+
+        return sprite;
+    }
+
     /// <summary>
     /// 텍스트 리턴
     /// </summary>
