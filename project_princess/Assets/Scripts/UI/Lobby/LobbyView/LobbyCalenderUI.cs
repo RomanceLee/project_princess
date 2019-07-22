@@ -22,6 +22,6 @@
 
     public void SetDateText( int date )
     {
-        dayofweekText.text = date.ToString();
+        dateText.text = date.ToString();
     }
 }

@@ -51,7 +51,7 @@ public class Utils
 
         if( atlas == null )
         {
-            Debug.LogError( "not exist atlas resource" );
+            Debug.LogError( "not exist atlas resource - " + atlasName );
             return null;
         }
 
@@ -59,7 +59,7 @@ public class Utils
 
         if( sprite == null )
         {
-            Debug.LogError( "not exist sprite resource" );
+            Debug.LogError( "not exist sprite resource - " + resourceName );
             return null;
         }
 
@@ -299,7 +299,7 @@ public class Utils
     public static Sprite GetAgeTypeToSprite( int age )
     {
         Sprite sprite = null;
-        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "age_type_image_" + age.ToString() );
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "common_age_type_image_" + age.ToString() );
 
         return sprite;
     }
@@ -310,7 +310,7 @@ public class Utils
     public static Sprite GetBloodTypeToSprite( int bloodType )
     {
         Sprite sprite = null;
-        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "blood_type_image_" + bloodType.ToString() );
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "common_blood_type_image_" + bloodType.ToString() );
 
         return sprite;
     }
@@ -321,7 +321,7 @@ public class Utils
     public static Sprite GetStarMapTypeToSprite( int starmapType )
     {
         Sprite sprite = null;
-        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "starmap_type_image_" + starmapType.ToString() );
+        sprite = LoadUIImageResourceFromAtlas( "Common", "Common", "common_starmap_type_image_" + starmapType.ToString() );
 
         return sprite;
     }

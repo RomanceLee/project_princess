@@ -78,21 +78,8 @@ public class GirlGlobeEnums
     //화면에 보여지는 뷰 타입에 대한 enum - 해당 뷰 Prefab 이름과 매칭 시킬 것.
     public enum eUIViewType
     {
-        MainLobbyView,
-        ShopView,
-        DressroomView,
-        ClosetView,
-        ClosetWearInformationView,
-        JourneyMapView,
-        StoryView,
-        ContestView,
-        CollectionView,
-        CollectionInformationView,
-        LuckyShopView,
-        AuditionView,
-        AuditionVoteView,
-        AuditionRankingView,
-        SelectNationView,
+        LobbyView,
+        StatusView,
     }
 
     //화면에 보여지는 팝업 타입에 대한 enum - 해당 팝업 Prefab 이름과 매칭 시킬 것.

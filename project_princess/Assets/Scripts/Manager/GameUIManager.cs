@@ -9,6 +9,7 @@ public class GameUIManager : MonoBehaviour
     private Stack< UIPopup > uIPopups;
 
     public Canvas viewCanvas;
+    public Canvas popupCanvas;
     public GameObject uiTouchBlock;
 
     [HideInInspector]
@@ -35,6 +36,7 @@ public class GameUIManager : MonoBehaviour
         if( instance == null )
         {
             instance = this;
+            DontDestroyOnLoad( instance.gameObject );
         }
 
         uIViewTypes = new Stack< GirlGlobeEnums.eUIViewType >();
@@ -47,6 +49,8 @@ public class GameUIManager : MonoBehaviour
         viewParmDic = new Dictionary< GirlGlobeEnums.eUIViewType, object[] >();
         popupParmDic = new Dictionary< GirlGlobeEnums.eUIPopupType, object[] >();
         objectParmDic = new Dictionary< string, object[] >();
+
+        AddView( GirlGlobeEnums.eUIViewType.LobbyView );
     }
 
     /// <summary>
@@ -61,7 +65,7 @@ public class GameUIManager : MonoBehaviour
         }
 
         currentView = Resources.Load< UIView >( Utils.CreateStringBuilderStr( new string[]{ "Prefabs/Panel/View/", _uiPanelType.ToString() } ) );
-        parentTransform = GameObject.Find( "ViewCanvas" ).transform;
+        parentTransform = viewCanvas.transform;
         currentView = Instantiate( currentView, parentTransform ).GetComponent< UIView >();
         
 
@@ -102,7 +106,7 @@ public class GameUIManager : MonoBehaviour
     public UIPopup AddPopup( GirlGlobeEnums.eUIPopupType _uiPopupType, object[] _param = null )
     {
         currentPopup = Resources.Load< UIPopup >( Utils.CreateStringBuilderStr( new string[]{ "Prefabs/Panel/Popup/", _uiPopupType.ToString() } ) );
-        parentTransform = GameObject.Find( "PopupCanvas" ).transform;
+        parentTransform = popupCanvas.transform;
         currentPopup = Instantiate( currentPopup, parentTransform ).GetComponent< UIPopup >();
 
         if( _param != null )

@@ -8,9 +8,9 @@ public class LobbyView : UIView
     public LobbyUserInfoUI userInfoUI;
     public LobbyMenuUI menuUI;
 
-    protected override void OnStart()
+    protected override void OnAwake()
     {
-        base.OnStart();
+        base.OnAwake();
         calenderUI.SetScheduleCountText( 1, 192 );
         calenderUI.SetMonthText( 1 );
         calenderUI.SetDayOfWeekText( "Mon" );
@@ -20,42 +20,6 @@ public class LobbyView : UIView
         userInfoUI.SetAgeInfoImage( 1 );
         userInfoUI.SetBloodTypeInfoImage( 1 );
         userInfoUI.SetStarmapTypeInfoImage( 1 );
-
-        menuUI.SetScheduleChartAction( OnClickScheduleChartButton );
-        menuUI.SetShoppingAction( OnClickShoppingButton );
-        menuUI.SetTalkAction( OnClickTalkButton );
-        menuUI.SetActionAction( OnClickActionButton );
-        menuUI.SetChangeWearAction( OnClickChangeWearButton );
-        menuUI.SetStatusAction( OnClickStatusButton );
-    }
-
-    private void OnClickScheduleChartButton()
-    {
-        Debug.Log( "OnClickScheduleChartButton" );
-    }
-
-    private void OnClickShoppingButton()
-    {
-        Debug.Log( "OnClickShoppingButton" );
-    }
-
-    private void OnClickTalkButton()
-    {
-        Debug.Log( "OnClickTalkButton" );
-    }
-
-    private void OnClickActionButton()
-    {
-        Debug.Log( "OnClickActionButton" );
-    }
-
-    private void OnClickChangeWearButton()
-    {
-        Debug.Log( "OnClickChangeWearButton" );
-    }
-
-    private void OnClickStatusButton()
-    {
-        Debug.Log( "OnClickStatusButton" );
+        userInfoUI.SetMoneyText( 1000 );
     }
 }

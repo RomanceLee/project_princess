@@ -1,4 +1,5 @@
-﻿using UnityEngine.Events;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class LobbyMenuUI : UICommon
 {
@@ -16,23 +17,16 @@ public class LobbyMenuUI : UICommon
     public UIText changeWearButtonText;
     public UIText statusButtonText;
 
-    private UnityAction scheduleChartAction;
-    private UnityAction shoppingAction;
-    private UnityAction talkAction;
-    private UnityAction actionAction;
-    private UnityAction changeWearAction;
-    private UnityAction statusAction;
-
     protected override void OnAwake()
     {
         base.OnAwake();
 
         scheduleChartButtonText.text = "일정표";
-        scheduleChartButtonText.text = "일정표";
-        scheduleChartButtonText.text = "일정표";
-        scheduleChartButtonText.text = "일정표";
-        scheduleChartButtonText.text = "일정표";
-        scheduleChartButtonText.text = "일정표";
+        shoppingButtonText.text = "쇼핑";
+        talkButtonText.text = "대화";
+        actionButtonText.text = "실행";
+        changeWearButtonText.text = "갈아입기";
+        statusButtonText.text = "상태보기";
     }
 
     protected override void OnDestroied()
@@ -42,51 +36,52 @@ public class LobbyMenuUI : UICommon
 
     protected override void InitializeEvents()
     {
-        scheduleChartButton.onClick.AddListener( scheduleChartAction );
-        shoppingButton.onClick.AddListener( shoppingAction );
-        talkButton.onClick.AddListener( talkAction );
-        actionButton.onClick.AddListener( actionAction );
-        changeWearButton.onClick.AddListener( changeWearAction );
-        statusButton.onClick.AddListener( statusAction );
+        scheduleChartButton.onClick.AddListener( OnClickScheduleChartButton );
+        shoppingButton.onClick.AddListener( OnClickShoppingButton );
+        talkButton.onClick.AddListener( OnClickTalkButton );
+        actionButton.onClick.AddListener( OnClickActionButton );
+        changeWearButton.onClick.AddListener( OnClickChangeWearButton );
+        statusButton.onClick.AddListener( OnClickStatusButton );
     }
 
     protected override void ReleaseEvents()
     {
-        scheduleChartButton.onClick.RemoveListener( scheduleChartAction );
-        shoppingButton.onClick.RemoveListener( shoppingAction );
-        talkButton.onClick.RemoveListener( talkAction );
-        actionButton.onClick.RemoveListener( actionAction );
-        changeWearButton.onClick.RemoveListener( changeWearAction );
-        statusButton.onClick.RemoveListener( statusAction );
+        scheduleChartButton.onClick.RemoveListener( OnClickScheduleChartButton );
+        shoppingButton.onClick.RemoveListener( OnClickShoppingButton );
+        talkButton.onClick.RemoveListener( OnClickTalkButton );
+        actionButton.onClick.RemoveListener( OnClickActionButton );
+        changeWearButton.onClick.RemoveListener( OnClickChangeWearButton );
+        statusButton.onClick.RemoveListener( OnClickStatusButton );
     }
 
-    public void SetScheduleChartAction( UnityAction action )
+    public void OnClickScheduleChartButton()
     {
-        scheduleChartAction = action;
+        Debug.Log( "OnClickScheduleChartButton" );
     }
 
-    public void SetShoppingAction( UnityAction action )
+    public void OnClickShoppingButton()
     {
-        shoppingAction = action;
+        Debug.Log( "OnClickShoppingButton" );
     }
 
-    public void SetTalkAction( UnityAction action )
+    public void OnClickTalkButton()
     {
-        talkAction = action;
+        Debug.Log( "OnClickTalkButton" );
     }
 
-    public void SetActionAction( UnityAction action )
+    public void OnClickActionButton()
     {
-        actionAction = action;
+        Debug.Log( "OnClickActionButton" );
     }
 
-    public void SetChangeWearAction( UnityAction action )
+    public void OnClickChangeWearButton()
     {
-        changeWearAction = action;
+        Debug.Log( "OnClickChangeWearButton" );
     }
 
-    public void SetStatusAction( UnityAction action )
+    public void OnClickStatusButton()
     {
-        statusAction = action;
+        Debug.Log( "OnClickStatusButton" );
+        GameUIManager.instance.AddView( GirlGlobeEnums.eUIViewType.StatusView );
     }
 }

@@ -53,7 +53,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 8dad2c687a36d5041a91aa2a2d0646e2, type: 3}
-    totalSpriteSurfaceArea: 350941
+    totalSpriteSurfaceArea: 400093
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -66,6 +66,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 55f489b16a8b2554eb892b0a0ec6c0a6, type: 3}
   - {fileID: 21300000, guid: cfdbfb02da7b3dc42ba23ec0b35f9d60, type: 3}
   - {fileID: 21300000, guid: be72e7922e883cf4d86b358f9773196d, type: 3}
+  - {fileID: 21300000, guid: 2f51f4c2501a1dc469ec59fe6029142f, type: 3}
   - {fileID: 21300000, guid: 632f25d257e8ab445a5040c6f6981ba1, type: 3}
   - {fileID: 21300000, guid: f44733e23503d514388f5df78c1f9cf6, type: 3}
   - {fileID: 21300000, guid: d031fde2f269ec548ad61a858d1689ab, type: 3}
@@ -98,6 +99,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: dba4d218a0cee164dab825d485dab46c, type: 3}
   - {fileID: 21300000, guid: 6835ae688e44915448788116386fcc3b, type: 3}
   - {fileID: 21300000, guid: 66fd4bb892a343d4f928aa7ba1acb3a7, type: 3}
+  - {fileID: 21300000, guid: 285aa9c80d0ed344a94d8ece4d5a0802, type: 3}
   - {fileID: 21300000, guid: 40ca19690231a2742a20cdb472544783, type: 3}
   - {fileID: 21300000, guid: 2a9fc689239bc4a438bf0a88e46bab02, type: 3}
   - {fileID: 21300000, guid: 51c7de89330739841af5ff928918f518, type: 3}
@@ -120,6 +122,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ca9fe71d15d779847837b91d513c5122, type: 3}
   - {fileID: 21300000, guid: 10a8f85d98a57a141bea626356f18946, type: 3}
   - {fileID: 21300000, guid: ccdaedcd8eff1a0418374506920358c0, type: 3}
+  - {fileID: 21300000, guid: 650567ed9d365f740a7a0a9a5ab2c015, type: 3}
   - {fileID: 21300000, guid: f49c730e8c445774eb3a0d869654d7e6, type: 3}
   - {fileID: 21300000, guid: 9d111b1e77422e34a87843f8e3247360, type: 3}
   - {fileID: 21300000, guid: 76752d3eb73d3814c966fdf298cbad93, type: 3}
@@ -138,6 +141,7 @@ SpriteAtlas:
   - common_deco_star
   - common_list_choice_act
   - common_box_4
+  - common_starmap_type_image_1
   - common_journey_ticket_icon
   - common_white_bg
   - common_category_deco_icon_2
@@ -170,6 +174,7 @@ SpriteAtlas:
   - common_sapphire_discount_line
   - common_category_socks_icon_1
   - common_minus_icon
+  - common_blood_type_image_1
   - common_box_1
   - common_category_deco_icon_1
   - common_category_outer_icon_2
@@ -192,6 +197,7 @@ SpriteAtlas:
   - common_tag_act_btn
   - common_tag_line_btn
   - common_normal_icon
+  - common_age_type_image_1
   - common_category_pants_icon_1
   - common_sapphire_charging_box
   - common_hud_plus_icon

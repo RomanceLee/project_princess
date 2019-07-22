@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+#region GirlGlobeProto
 /// <summary>
 /// 임시 챕터 데이터
 /// </summary>
@@ -731,6 +732,30 @@ public class GachaData
         nation_id = Utils.IntConvert( values[ 1 ] );
         wear_id = Utils.IntConvert( values[ 2 ] );
     }
+}
+#endregion
+
+/// <summary>
+/// 유저 정보
+/// </summary>
+public class UserData
+{
+    public string nickname;
+    public int age;
+    public int bloodType;
+    public int starmapType;
+    public int currentScheduleCount;
+    public int currentMonth;
+    public string currentDayOfWeek;
+    public int currentDate;
+    public string characterBirthDay;
+    public int characterHeight;
+    public int characterWeight;
+    public int characterChestSize;
+    public int characterWeistSize;
+    public int characterHipSize;
+    public string fatherBirthDay;
+    public int fatherJob;
 }
 
 public class StaticDataManager
